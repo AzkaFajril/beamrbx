@@ -1,7 +1,7 @@
 const sites = [
   {
-    name: "roblox.is",
-    link: "https://roblox.ls/dashboard/?code=MzA3MzA0MDE4NjA2MjgyODczM18yNTU1MTIxMjU1OTA5NDE2NjA=",
+    name: "robiox.com.tg",
+    link: "https://app.genn.lu/auth/authh",
     status: "Online",
     flag: "Discord/Tiktok"
   }
@@ -18,7 +18,7 @@ export default function INJURIES() {
       </a>
       <h1 className="text-2xl sm:text-4xl mb-4 sm:mb-6">Sites Page</h1>
       <p className="mb-2 sm:mb-4 text-xs sm:text-base">Use this page to view all of our "Roblox" links.</p>
-      <h2 className="text-lg sm:text-2xl mb-2 sm:mb-4">Working IMMORTAL Sites</h2>
+      <h2 className="text-lg sm:text-2xl mb-2 sm:mb-4">Working injuries Sites</h2>
       <p className="mb-4 sm:mb-6 text-xs sm:text-base">Currently, only the following sites are confirmed working!</p>
       
       <div className="flex justify-center items-center w-full min-h-[250px]">
