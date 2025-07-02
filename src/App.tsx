@@ -8,6 +8,8 @@ import Imortal from './components/genelatorlinkweb/imortal'
 import INJURIES from './components/genelatorlinkweb/INJURIES'
 import Splunk from './components/genelatorlinkweb/splunk'
 import Shockify from './components/genelatorlinkweb/shockify'
+import HyperlinkFormatter from './components/profil'
+import TrainingProtocols from './components/TrainingProtocols'
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
         <Route path="/injuries" element={<INJURIES/>} />
         <Route path="/splunk" element={<Splunk/>} />
         <Route path="/shockify" element={<Shockify/>} />
+        <Route path="/HyperlinkFormatter" element={<HyperlinkFormatter/>} />
+        <Route path="/TrainingProtocols" element={<TrainingProtocols/>} />
       </Routes>
     </BrowserRouter>
   )

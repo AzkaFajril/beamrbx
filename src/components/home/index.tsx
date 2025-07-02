@@ -49,7 +49,7 @@ const Dashboard: React.FC = () => {
               <p className="text-sm">Automated solutions</p>
             </a>
             <a 
-              href="/hyperlink" 
+              href="/HyperlinkFormatter" 
               className="bg-blue-700 p-4 rounded-lg shadow-md w-full sm:w-[20rem] md:w-[28rem] lg:w-[32rem] flex flex-col justify-center hover:bg-blue-800 transition-colors duration-300 mx-auto"
             >
               <div className="flex items-center mb-2">
