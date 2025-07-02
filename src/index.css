@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+.animated-bg-g {
+  background: linear-gradient(-45deg, #6d28d9, #3b82f6, #9333ea, #f59e42, #ec4899, #22d3ee, #a3e635, #fde047);
+  background-size: 400% 400%;
+  animation: gradientMove 5s ease infinite;
+  -webkit-animation: gradientMove 5s ease infinite;
+  overflow-y: hidden;
+}
+.animated-bg {
+  background: linear-gradient(-45deg, #6d28d9, #3b82f6, #9333ea, #f59e42, #ec4899, #22d3ee, #a3e635, #fde047);
+  background-size: 400% 400%;
+  animation: gradientMove 5s ease infinite;
+  -webkit-animation: gradientMove 5s ease infinite;
+  min-height: 100vw;
+  overflow-y: hidden;
+}
+.animated-bg-db {
+  background: linear-gradient(-45deg, #6d28d9, #3b82f6, #9333ea, #f59e42, #ec4899, #22d3ee, #a3e635, #fde047);
+  background-size: 400% 400%;
+  animation: gradientMove 5s ease infinite;
+  -webkit-animation: gradientMove 5s ease infinite;
+  min-height: 80vw;
+  overflow-y: hidden;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+body {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.pixelify-sans-bold {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+.animated-bg {
+  background: linear-gradient(-45deg, #6d28d9, #3b82f6, #9333ea, #f59e42, #ec4899, #22d3ee, #a3e635, #fde047);
+  background-size: 400% 400%;
+  animation: gradientMove 5s ease infinite;
+  -webkit-animation: gradientMove 5s ease infinite;
+  min-height: 80vw;
+  overflow-y: hidden;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+body {
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.pixelify-sans-bold {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
