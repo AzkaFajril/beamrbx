@@ -10,6 +10,7 @@ import Splunk from './components/genelatorlinkweb/splunk'
 import Shockify from './components/genelatorlinkweb/shockify'
 import HyperlinkFormatter from './components/profil'
 import TrainingProtocols from './components/TrainingProtocols'
+import Bypas from './components/bypas'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/shockify" element={<Shockify/>} />
         <Route path="/HyperlinkFormatter" element={<HyperlinkFormatter/>} />
         <Route path="/TrainingProtocols" element={<TrainingProtocols/>} />
+        <Route path="/bypas" element={<Bypas/>} />
       </Routes>
     </BrowserRouter>
   )

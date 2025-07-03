@@ -58,8 +58,7 @@ const Dashboard: React.FC = () => {
               </div>
             </a>
             <a 
-              href="https://starblox.netlify.app/"
-              target="_blank"
+              href="/Bypas"
               className="bg-green-700 p-4 rounded-lg shadow-md flex flex-col justify-center hover:bg-green-800 transition-colors duration-300"
             >
               <div className="flex items-center mb-2">

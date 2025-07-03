@@ -3,22 +3,21 @@ import ShortenerSelector from './ShortenerSelector';
 
 const HyperlinkFormatter: React.FC = () => {
   const [linkType, setLinkType] = useState('Group');
-  const [originalUrl, setOriginalUrl] = useState('https://www.roblox.com/groups/78092472/');
+  const [originalUrl, setOriginalUrl] = useState('https//www.roblox.com/groups/78092472/');
   const [shortenedUrl, setShortenedUrl] = useState('');
   const [formattedLink, setFormattedLink] = useState('');
   const [selectedShortener, setSelectedShortener] = useState("https://shorturl.asia");
-
- 
+  const [copied, setCopied] = useState(false);
 
   const handleLinkTypeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const type = e.target.value;
     setLinkType(type);
     if (type === 'Profile') {
-      setOriginalUrl('https://www.roblox.com/users/78092747422/profile');
+      setOriginalUrl('https//www.roblox.com/users/78092747422/profile');
     } else if (type === 'PrivateServer') {
-      setOriginalUrl('https://www.roblox.com/share?code=116562041fd4d54681b915675dd54767&type=Server');
+      setOriginalUrl('https//www.roblox.com/share?code=116562041fd4d54681b915675dd54767&type=Server');
     } else if (type === 'Group') {
-      setOriginalUrl('https://www.roblox.com/groups/78092472/');
+      setOriginalUrl('https//www.roblox.com/groups/78092472/');
     }
   };
 
@@ -74,7 +73,7 @@ const HyperlinkFormatter: React.FC = () => {
 
       <button
         onClick={generateFormattedLink}
-        className="mt-4 w-full h-10 bg-red-600 text-white font-bold rounded hover:bg-red-700"
+        className="mt-4 w-full h-10 bg-red-600 text-white font-bold rounded hover:bg-red-700 transition duration-150 active:scale-95"
       >
         Generate Formatted Link
       </button>
@@ -86,6 +85,28 @@ const HyperlinkFormatter: React.FC = () => {
           value={formattedLink}
           className="mt-1 block w-full h-20 p-2 border border-red-600 rounded bg-gray-800"
         />
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText(formattedLink)
+              .then(() => {
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+                console.log("Success copy");
+              })
+              .catch(() => {
+                setCopied(false);
+                console.log("Failed to copy");
+              });
+          }}
+          className="mt-2 px-4 py-2 bg-red-600 text-white font-bold rounded hover:bg-red-700 transition duration-150 active:scale-95"
+        >
+          Copy
+        </button>
+        {copied && (
+          <div className="mt-2 text-green-400 font-mono text-sm">
+            Success to copy
+          </div>
+        )}
       </div>
 
       <div className="mt-8">
