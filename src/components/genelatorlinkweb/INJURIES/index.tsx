@@ -1,7 +1,7 @@
 const sites = [
   {
     name: "robiox.com.tg",
-    link: "https://app.genn.lu/auth/authh",
+    link: "https://app.genn.lu/auth/bokb",
     status: "Online",
     flag: "Discord/Tiktok"
   }
