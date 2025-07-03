@@ -15,9 +15,9 @@ const Dashboard: React.FC = () => {
           <span className="text-white rounded px-3 py-1 text-[1.3rem] font-semibold shadow">🟢 Tiktok Support</span>
           <span className="text-white rounded px-3 py-1 text-[1.3rem] font-semibold shadow">🟢 Browser Support</span>
         </div>
-        <p className="text-md p-5">https://discord.gg/9augvSyZPN</p>
+        <p className="text-md p-5">https://discord.gg/bpYqMErTNk</p>
         <a
-          href="https://discord.gg/9augvSyZPN"
+          href="https://discord.gg/bpYqMErTNk"
           className="text-blue-200 underline bg-blue-900 px-4 py-2 rounded-lg inline-block shadow-md hover:bg-blue-800 transition w-[26rem] text-center"
         >
           Join Discord Server
